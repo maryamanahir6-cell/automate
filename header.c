@@ -9,7 +9,7 @@ void readDot(int A[20][20])
 		{
 			printf("File not opened, please check if your graph.dot file exists in this directory");
 		}
-	fscanf(file, "%s");
+	fscanf(f, "%s");
 	while( fscanf(f," %c -> %c [label=\"%d\"]",&src,&dest,&val ) == 3)
 			{
 				A[src][dest] = 1;
