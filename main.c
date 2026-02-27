@@ -1,10 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
-// Partie 1 : Lecture et affichage d'un automate 
-// Une structure de données qui peut etre utilisé est un graphe orienté evalué les sommets representent les états et les arc représentent l'alphabet en cours de lecture
+#include "header.h"
+// main.c
 int main()
 {
-
-
+	int output = menu();
+	switch(output)
+	{
+		case 1 : readDot();
+		case 2 : automate();
+	}
 	return 0;
 }
