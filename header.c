@@ -4,7 +4,7 @@
 int menu(void)
 	{
 		int choice;
-		printf("-----------AUTOMATE--------\n","1. Charger l'automate depuis graph.dot\n","2. Lire l'automate");
+		printf("-----------AUTOMATE--------\n""1. Charger l'automate depuis graph.dot\n""2. Lire l'automate");
 		scanf(%d,&choice);
 		return choice;
 	}
