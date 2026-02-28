@@ -11,23 +11,32 @@ int menu(void)
 
 void readDot(Automate protocol)
 	{
-		int src,dest,i;
+		int src,dest,i = 0;
 		char val;
 	FILE* f;
-	fptr = fopen("graph.dot","r");
-	if(fptr == NULL)
+	f = fopen("graph.dot","r");
+	if(f == NULL)
 		{
 			printf("Fichier introuvable, veuillez vous assurez de l'emplacement du fichier.");
-		}i
+		}
 	while( fscanf(f," %d -> %d [label=\"%c\"]",&src,&dest,&val ) == 3)
 			{
 				protocol.transition[i].etat_dep = src;
 				protocol.transition[i].etat_arrive = dest;
 				protocol.tranisition[i].lettre = val;
+				i++;
 			}
 	}
 void automateShow(Automate protocol)
 {
+	for(int j = 0; j<10 ; j++)
+	{
+		printf("[%d] ",protocol.etats[i]);
+	}
+	for(int k = 0; k<10 ; k++)
+	{
+		printf("[%c] ", protocol.alphabet[i]);
+	}
 	for(int i = 0; i<20 ; i++)
 	{
 
