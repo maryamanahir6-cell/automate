@@ -2,15 +2,15 @@
 #include<stdlib.h>
 
 typedef struct Transition{
-    int etat_dep;
-    int etat_arriv;
+    char etat_dep;
+    char etat_arriv;
     char lettre;
 }Transition;
 typedef struct Automate{
-    int etats[10];
+    char etats[10];
     Transition transitions[20];
-    char Alphabet[10];
-    int etat_initial;
-    int etat_final;
+    char Alphabet[5];
+    char etat_initial;
+    char etat_final;
 }Automate;
 

@@ -1,3 +1,4 @@
-void readDot(Automate protocol);
-void automate(Automate protocol);
+#include "structs.h"
+void readDot();
+void automateShow();
 int menu(void);
