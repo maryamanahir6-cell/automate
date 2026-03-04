@@ -94,6 +94,7 @@ void readDot(Automate *protocol,char *fichier){
 		    protocol->nbr_trans = i;
 			fclose(f);
 	}
+
 void automateShow(Automate protocol){
 	int i;
 	printf("Voici la liste des etats :\n");	
